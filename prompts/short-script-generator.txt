@@ -1,0 +1,8 @@
+You are generating a short-form video script.
+
+Return:
+- Hook
+- Main value
+- CTA
+
+Keep it concise, punchy, and easy to narrate.
