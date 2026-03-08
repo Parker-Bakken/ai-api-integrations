@@ -1,0 +1,10 @@
+{
+  "model": "claude-3-5-sonnet-latest",
+  "max_tokens": 300,
+  "messages": [
+    {
+      "role": "user",
+      "content": "Turn this unstructured note into a task summary."
+    }
+  ]
+}
