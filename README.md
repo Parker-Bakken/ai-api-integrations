@@ -1,6 +1,10 @@
 # ai-api-integrations
 
-Simple, reusable AI API integration patterns for automation workflows using OpenAI, Claude, and other LLM providers.
+> ⚠️ **Work in Progress**
+>
+> This repository is actively being built and expanded. New AI provider integrations, prompt patterns, and automation examples will be added over time as the project evolves.
+>
+> The goal of this repo is to become a practical reference for clean, reusable AI API integrations used in real automation workflows.
 
 ## Why this repo exists
 
