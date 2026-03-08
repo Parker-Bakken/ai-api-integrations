@@ -6,6 +6,8 @@
 >
 > The goal of this repo is to become a practical reference for clean, reusable AI API integrations used in real automation workflows.
 
+Simple, reusable AI API integration patterns for automation workflows using OpenAI, Claude, and other LLM providers.
+
 ## Why this repo exists
 
 Most automation systems fail when AI calls are messy, inconsistent, or hard to scale.
