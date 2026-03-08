@@ -1,0 +1,14 @@
+{
+  "model": "gpt-4o-mini",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant for automation workflows."
+    },
+    {
+      "role": "user",
+      "content": "Summarize this support ticket for a CRM update."
+    }
+  ],
+  "temperature": 0.7
+}

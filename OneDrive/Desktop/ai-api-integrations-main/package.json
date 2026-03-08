@@ -1,0 +1,15 @@
+{
+  "name": "ai-api-integrations",
+  "version": "1.0.0",
+  "description": "Simple reusable AI API integration patterns for automation workflows",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "openai": "node examples/openai-chat.js",
+    "claude": "node examples/claude-message.js",
+    "perplexity": "node examples/perplexity-research.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
