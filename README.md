@@ -6,66 +6,69 @@
 >
 > The goal of this repo is to become a practical reference for clean, reusable AI API integrations used in real automation workflows.
 
-Simple, reusable AI API integration patterns for automation workflows using OpenAI, Claude, and other LLM providers.
+---
 
-## Why this repo exists
+## Overview
 
-Most automation systems fail when AI calls are messy, inconsistent, or hard to scale.
+Modern automation systems increasingly rely on AI APIs for tasks like summarization, content generation, research, classification, and decision support. However, many implementations become difficult to maintain because prompts, API calls, and workflow logic are tightly coupled.
 
-This repo shows clean patterns for:
-- sending prompts to multiple AI providers
-- structuring reusable payloads
-- separating prompts from code
-- handling API errors safely
-- preparing AI outputs for automations like n8n, content pipelines, research workflows, and support tools
+This repository demonstrates **clean patterns for integrating AI APIs into automation systems**.
 
-## What’s included
+The examples in this repo focus on:
 
-- OpenAI chat completion example
-- Claude message API example
-- Perplexity research-style example
-- reusable prompt patterns
-- sample payloads
-- environment variable setup
-- documentation for real-world automation use cases
+* Structuring prompts so they can be reused across workflows
+* Separating prompts, payloads, and API logic
+* Handling responses in a way that downstream automations can reliably consume
+* Supporting multiple AI providers with similar patterns
 
-## Example use cases
+These patterns are designed for use in systems such as:
 
-- AI content generation pipelines
-- YouTube script generation
-- workflow assistants
-- summarization automations
-- lead research enrichment
-- internal knowledge helpers
+* automation platforms (like n8n)
+* content generation pipelines
+* research workflows
+* support automation
+* internal AI assistants
 
-## Stack
+---
 
-- Node.js
-- JavaScript
-- REST APIs
-- environment variables via `.env`
+## Design Philosophy
 
-## Repo structure
+AI integrations should follow a simple structure:
 
-```txt
-docs/        -> architecture notes and provider comparisons
-examples/    -> working integration examples
-prompts/     -> reusable prompt templates
-payloads/    -> sample request and response bodies
+```
+Input source
+    ↓
+Prompt builder
+    ↓
+AI provider API
+    ↓
+Structured output
+    ↓
+Next automation step
 ```
 
-## Key idea
+By keeping these layers separate, automation systems become:
 
-A strong AI automation system should make it easy to swap providers, reuse prompt patterns, and keep outputs structured enough for downstream workflows.
+* easier to maintain
+* easier to scale
+* easier to swap AI providers
+* safer to use in production workflows
 
-## Next improvements
+---
 
-- add streaming examples
-- add JSON schema validation
-- add retry logic
-- add n8n webhook examples
-- add cost tracking per provider
+## What This Repository Contains
 
-## Author
+This repo provides simple examples for integrating with modern AI APIs including:
 
-Built by Parker Bakken
+* OpenAI
+* Claude (Anthropic)
+* Perplexity
+
+It also includes:
+
+* reusable prompt templates
+* example request payloads
+* structured output patterns
+* documentation for real-world automation use cases
+
+The goal is not to create a large framework, but rather to provide **clear reference patterns that can be reused in automation projects.**
