@@ -46,3 +46,20 @@ docs/        -> architecture notes and provider comparisons
 examples/    -> working integration examples
 prompts/     -> reusable prompt templates
 payloads/    -> sample request and response bodies
+```
+
+## Key idea
+
+A strong AI automation system should make it easy to swap providers, reuse prompt patterns, and keep outputs structured enough for downstream workflows.
+
+## Next improvements
+
+- add streaming examples
+- add JSON schema validation
+- add retry logic
+- add n8n webhook examples
+- add cost tracking per provider
+
+## Author
+
+Built by Parker Bakken
